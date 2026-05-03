@@ -1,4 +1,5 @@
 import { Suspense } from "react"
+import Image from "next/image"
 
 import { listRegions } from "@lib/data/regions"
 import { StoreRegion } from "@medusajs/types"
@@ -19,13 +20,20 @@ export default async function Nav() {
             </div>
           </div>
 
-          <div className="flex items-center h-full">
+          <div className="flex items-center justify-center h-full">
             <LocalizedClientLink
               href="/"
-              className="txt-compact-xlarge-plus hover:text-ui-fg-base uppercase"
+              className="inline-flex items-center justify-center h-full px-2 hover:text-ui-fg-base"
               data-testid="nav-store-link"
             >
-              Medusa Store
+              <Image
+                src="/images/STINGINC.png"
+                alt="Sting Store"
+                width={140}
+                height={40}
+                className="h-10 w-auto sm:h-12"
+                priority
+              />
             </LocalizedClientLink>
           </div>
 
