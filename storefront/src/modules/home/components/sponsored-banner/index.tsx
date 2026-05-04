@@ -22,14 +22,14 @@ export default function SponsoredBanner({
     <section className="content-container py-16 bg-ui-bg-subtle">
       <div className="flex flex-col gap-4 small:flex-row small:items-end small:justify-between mb-10">
         <div>
-          <Text className="uppercase tracking-[0.35em] text-ui-fg-subtle">
+          <Text className="uppercase tracking-[0.35em] text-ui-fg-subtle font-semibold text-sm">
             Sponsored
           </Text>
           <Heading
             level="h2"
-            className="mt-3 text-3xl font-normal text-ui-fg-base"
+            className="mt-3 text-5xl small:text-6xl font-bold text-ui-fg-base leading-tight"
           >
-            Sponsored products
+            Featured Products
           </Heading>
         </div>
         <Text className="max-w-2xl text-ui-fg-subtle">
