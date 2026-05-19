@@ -3,6 +3,17 @@ import { Heading, Text } from "@medusajs/ui"
 const Hero = () => {
   return (
     <section className="relative min-h-[80vh] w-full overflow-hidden bg-ui-fg-base text-white">
+      <video
+        className="absolute inset-0 h-full w-full object-cover"
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="metadata"
+      >
+        <source src="/video/high%20(1).mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
       <div className="absolute inset-0 bg-ui-fg-base/95" />
       <div className="relative z-20 flex h-full flex-col items-center justify-center px-6 text-center small:px-12">
         <Heading

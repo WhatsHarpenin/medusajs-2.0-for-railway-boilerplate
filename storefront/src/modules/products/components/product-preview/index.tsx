@@ -38,10 +38,23 @@ export default async function ProductPreview({
           size="full"
           isFeatured={isFeatured}
         />
-        <div className="flex txt-compact-medium mt-4 justify-between">
-          <Text className="text-ui-fg-subtle" data-testid="product-title">
-            {product.title}
-          </Text>
+        <div className="mt-4 flex items-start justify-between gap-x-4">
+          <div>
+            <Text
+              className="txt-compact-small uppercase tracking-[0.12em] text-ui-fg-subtle"
+              data-testid="product-title"
+            >
+              {product.title}
+            </Text>
+
+            {product.variants && product.variants.length > 0 &&
+            product.variants.every(
+              (v: any) => (v.inventory_quantity ?? 1) <= 0
+            ) ? (
+              <Text className="txt-medium mt-2 text-red-600 font-semibold">SOLD OUT</Text>
+            ) : null}
+          </div>
+
           <div className="flex items-center gap-x-2">
             {cheapestPrice && <PreviewPrice price={cheapestPrice} />}
           </div>

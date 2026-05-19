@@ -9,9 +9,9 @@ import { getRegion } from "@lib/data/regions"
 import { listMagazineIssues } from "@lib/data/magazines"
 
 export const metadata: Metadata = {
-  title: "Medusa Next.js Starter Template",
+  title: "Sting STORE YOUR ONE STOP SHOP FOR EVERYTHING CULTURE IN AFRICA AND THE DIASPORA ",
   description:
-    "A performant frontend ecommerce starter template with Next.js 14 and Medusa.",
+    "A STORE FOR EVERYTHING CULTURE IN AFRICA AND THE DIASPORA. FOUR US bUY us",
 }
 
 export default async function Home({

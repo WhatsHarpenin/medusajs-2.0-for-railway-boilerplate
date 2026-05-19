@@ -53,7 +53,7 @@ const Payment = ({
     return {
       style: {
         base: {
-          fontFamily: "Inter, sans-serif",
+          fontFamily: 'Presicav, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, sans-serif',
           color: "#424270",
           "::placeholder": {
             color: "rgb(107 114 128)",
